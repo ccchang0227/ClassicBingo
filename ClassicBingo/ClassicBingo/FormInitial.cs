@@ -102,5 +102,10 @@ namespace ClassicBingo
             }
 
         }
+
+        private void ButtonStart_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

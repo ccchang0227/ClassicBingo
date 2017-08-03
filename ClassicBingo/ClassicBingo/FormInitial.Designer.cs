@@ -33,6 +33,7 @@
             this.buttonEnd = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
             this.buttonRand = new System.Windows.Forms.Button();
+            this.buttonStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -42,9 +43,9 @@
             this.titleLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.titleLabel.Location = new System.Drawing.Point(12, 9);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(89, 21);
+            this.titleLabel.Size = new System.Drawing.Size(76, 21);
             this.titleLabel.TabIndex = 1;
-            this.titleLabel.Text = "Initialize";
+            this.titleLabel.Text = "初始化";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayout
@@ -57,7 +58,7 @@
             this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayout.Location = new System.Drawing.Point(12, 62);
+            this.tableLayout.Location = new System.Drawing.Point(12, 50);
             this.tableLayout.Name = "tableLayout";
             this.tableLayout.RowCount = 5;
             this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -116,12 +117,25 @@
             this.buttonRand.UseVisualStyleBackColor = true;
             this.buttonRand.Click += new System.EventHandler(this.ButtonRand_Click);
             // 
+            // buttonStart
+            // 
+            this.buttonStart.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonStart.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonStart.Location = new System.Drawing.Point(112, 335);
+            this.buttonStart.Name = "buttonStart";
+            this.buttonStart.Size = new System.Drawing.Size(75, 23);
+            this.buttonStart.TabIndex = 6;
+            this.buttonStart.Text = "開始";
+            this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.ButtonStart_Click);
+            // 
             // FormInitial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(300, 350);
+            this.ClientSize = new System.Drawing.Size(300, 370);
+            this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.buttonRand);
             this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.buttonEnd);
@@ -129,8 +143,8 @@
             this.Controls.Add(this.titleLabel);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(300, 350);
-            this.MinimumSize = new System.Drawing.Size(300, 350);
+            this.MaximumSize = new System.Drawing.Size(300, 370);
+            this.MinimumSize = new System.Drawing.Size(300, 370);
             this.Name = "FormInitial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Initialize";
@@ -145,6 +159,7 @@
         private System.Windows.Forms.Button buttonEnd;
         private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.Button buttonRand;
+        private System.Windows.Forms.Button buttonStart;
     }
 }
 
